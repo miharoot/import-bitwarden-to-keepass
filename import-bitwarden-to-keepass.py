@@ -265,7 +265,7 @@ def bitwarden2keepass(args):
                             args.bw_session,
                         ]
                     )
-                    attachment_id = add_binary(attachment_raw)
+                    attachment_id = kp.add_binary(attachment_raw)
                     entry.add_attachment(attachment_id, attachment["fileName"])
 
             if totp_enabled and not separated:
